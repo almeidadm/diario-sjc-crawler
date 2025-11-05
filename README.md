@@ -6,7 +6,7 @@
 ![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey.svg)
 
 Um crawler assíncrono e eficiente para capturar edições e artigos do Diário Oficial de São José dos Campos. Desenvolvido para processamento em larga escala com armazenamento otimizado em formato Parquet. Gerenciado com Poetry para dependências consistentes e empacotamento.
-🚀 Características Principais
+## 🚀 Características Principais
 
     Crawler Assíncrono: Processamento concorrente com httpx e asyncio
 
@@ -22,7 +22,7 @@ Um crawler assíncrono e eficiente para capturar edições e artigos do Diário 
 
     Gerenciamento com Poetry: Dependências consistentes e ambiente isolado
 
-📁 Estrutura do Projeto
+## 📁 Estrutura do Projeto
 ```text
 rag-diario-sjc-crawler/
 ├── pyproject.toml              # Configuração Poetry e dependências
@@ -42,14 +42,14 @@ rag-diario-sjc-crawler/
 └── README.md                   # Este arquivo
 ```
 
-⚡ Instalação Rápida
+## ⚡ Instalação Rápida
 Pré-requisitos
 
-    Python 3.11 ou superior
+    Python 3.12 ou superior
 
     Poetry instalado globalmente
 
-Instalação com Poetry
+### Instalação com Poetry
 
 ```bash
 # Clone o repositório
@@ -57,37 +57,41 @@ git clone <repository-url>
 cd rag-diario-sjc-crawler
 ```
 
-# Instale as dependências com Poetry
+#### Instale as dependências com Poetry
+```bash
 poetry install
+```
 
-# Ative o ambiente virtual
+#### Ative o ambiente virtual
+```bash
 poetry shell
+```
 
-Instalação sem Poetry Shell
+### Instalação sem Poetry Shell
 
 ```bash
 # Execute comandos diretamente sem ativar o shell
 poetry run python scripts/run_crawler.py --days 7
 ```
 
-🎯 Uso Básico
-Execução Simples (Últimos 7 dias)
+## 🎯 Uso Básico
+### Execução Simples (Últimos 7 dias)
 ```bash
 poetry run python scripts/run_crawler.py --days 7
 ```
 
-Período Específico
+### Período Específico
 ```bash
 poetry run python scripts/run_crawler.py --start-date 2025-01-01 --end-date 2025-01-31
 ```
 
-Com Logs Detalhados
+### Com Logs Detalhados
 ```bash
 poetry run python scripts/run_crawler.py --days 30 --log-level DEBUG --log-file logs/crawler.log
 ```
 
-🔧 Uso Avançado
-Processamento em Lotes (Longo Período)
+## 🔧 Uso Avançado
+### Processamento em Lotes (Longo Período)
 ```bash
 poetry run python scripts/batch_process.py \
   --start-date 2025-01-01 \
@@ -96,7 +100,7 @@ poetry run python scripts/batch_process.py \
   --max-retries 5
 ```
 
-Desenvolvimento e Contribuição
+### Desenvolvimento e Contribuição
 ```bash
 # Instalar dependências de desenvolvimento
 poetry install --with dev
@@ -112,10 +116,10 @@ poetry run isort src/ scripts/
 poetry run mypy src/
 ```
 
-📦 Dependências Principais
+## 📦 Dependências Principais
 
 O projeto utiliza Poetry para gerenciamento de dependências. Principais pacotes:
-Runtime
+### Runtime
 
 ```toml
 httpx = ">=0.24.0"           # Cliente HTTP assíncrono
@@ -125,7 +129,7 @@ selectolax = ">=0.3.0"       # Parsing HTML rápido
 python-dateutil = ">=2.8.0"  # Utilitários de data
 ```
 
-Desenvolvimento
+### Desenvolvimento
 ```toml
 pytest = ">=7.0.0"           # Testes
 black = ">=23.0.0"           # Formatação
@@ -134,8 +138,8 @@ mypy = ">=1.0.0"            # Verificação de tipos
 jupyter = ">=1.0.0"          # Notebooks para análise
 ```
 
-🏗️ Estrutura do Código
-Módulos Principais
+## 🏗️ Estrutura do Código
+### Módulos Principais
 ```python
 # Crawler principal
 from diario_crawler.core import GazetteCrawler, CrawlerConfig
@@ -153,7 +157,7 @@ from diario_crawler.storage import ParquetStorage
 from diario_crawler.utils import get_workdays, setup_logging
 ```
 
-Exemplo de Uso Programático
+## Exemplo de Uso Programático
 ```python
 from datetime import date
 from diario_crawler.core import GazetteCrawler, CrawlerConfig
@@ -175,8 +179,7 @@ import asyncio
 asyncio.run(main())
 ```
 
-💾 Armazenamento de Dados
-Estrutura com Poetry
+## 💾 Armazenamento de Dados
 
 Os dados são armazenados no diretório data/ com a seguinte estrutura:
 
@@ -189,7 +192,7 @@ data/
 └── checkpoints/             # Checkpoints para processamento em lote
 ```
 
-Recuperação de Dados
+### Recuperação de Dados
 ```python
 from diario_crawler.storage import ParquetStorage
 
@@ -201,116 +204,6 @@ edition = storage.load_edition_with_articles("2555")
 # Carregar todas as edições
 all_editions = storage.load_editions()
 ```
-
-📊 Comandos Úteis do Poetry
-
-```bash
-# Adicionar nova dependência
-poetry add nome-do-pacote
-
-# Adicionar dependência de desenvolvimento
-poetry add --group dev nome-do-pacote
-
-# Atualizar dependências
-poetry update
-
-# Verificar ambiente
-poetry env info
-
-# Exportar requirements.txt (se necessário)
-poetry export -f requirements.txt --output requirements.txt
-```
-
-🚀 Deploy e Produção
-Build do Pacote
-```bash
-# Build do pacote distribuível
-poetry build
-
-# Instalação em produção (sem dependências de dev)
-poetry install --without dev
-```
-
-Execução em Produção
-
-```bash
-# Usando o ambiente Poetry
-poetry run python scripts/run_crawler.py --days 1
-
-# Ou instalando globalmente
-pip install .
-python scripts/run_crawler.py --days 1
-```
-
-🐛 Solução de Problemas
-Problemas Comuns
-
-Erro de importação
-
-```bash
-# Certifique-se de estar no ambiente Poetry
-poetry shell
-
-# Ou use poetry run
-poetry run python seu_script.py
-```
-
-Dependências faltando
-
-```bash
-# Atualize o ambiente
-poetry install
-```
-
-Logs e Debug
-
-```bash
-# Logs detalhados
-poetry run python scripts/run_crawler.py --log-level DEBUG
-
-# Log para arquivo
-poetry run python scripts/run_crawler.py --log-file crawler.log
-```
-
-🤝 Contribuição
-
-    Configuração do Ambiente
-
-```bash
-git clone <repo>
-cd rag-diario-sjc-crawler
-poetry install --with dev
-```
-    Padrões de Código
-
-```bash
-# Formatação automática
-poetry run black src/ scripts/ tests/
-poetry run isort src/ scripts/ tests/
-
-# Verificação de tipos
-poetry run mypy src/
-```
-Testes
-
-```bash
-
-poetry run pytest
-```
-
-📄 Licença
+## 📄 Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
-🆘 Suporte
-
-Em caso de problemas:
-
-    Verifique se o ambiente Poetry está ativo: poetry env info
-
-    Execute com logs detalhados: --log-level DEBUG
-
-    Consulte as issues abertas no repositório
-
-    Crie uma nova issue com detalhes do problema e output do comando poetry env info
-
-Desenvolvido com Poetry para dependências consistentes e ambiente reproduzível 📦🐍
