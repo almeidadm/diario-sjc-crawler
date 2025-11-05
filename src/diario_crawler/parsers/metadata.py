@@ -2,7 +2,6 @@
 
 import json
 import logging
-from typing import Any
 
 import httpx
 
@@ -18,10 +17,10 @@ class MetadataParser:
     def parse(response: httpx.Response) -> list[GazetteMetadata]:
         """
         Extrai metadados de edições do JSON da API.
-        
+
         Args:
             response: Resposta HTTP com JSON de metadados
-            
+
         Returns:
             Lista de GazetteMetadata extraídos
         """
@@ -43,31 +42,30 @@ class MetadataParser:
         for item in items:
             try:
                 edition_id = str(item.get("id"))
-                
-                # CORREÇÃO: Garantir que supplement seja booleano
+
                 supplement = item.get("suplemento")
                 if supplement is None:
                     supplement_bool = False
                 elif isinstance(supplement, bool):
                     supplement_bool = supplement
                 elif isinstance(supplement, str):
-                    supplement_bool = supplement.lower() in ('true', '1', 'yes')
+                    supplement_bool = supplement.lower() in ("true", "1", "yes")
                 elif isinstance(supplement, int):
                     supplement_bool = bool(supplement)
                 else:
                     supplement_bool = False
-                
+
                 metadata = GazetteMetadata(
                     edition_id=edition_id,
                     publication_date=publication_date,
                     edition_number=int(item.get("numero", 0)),
-                    supplement=supplement_bool,  # CORREÇÃO: Agora é sempre booleano
+                    supplement=supplement_bool,
                     edition_type_id=int(item.get("tipo_edicao_id", 0)),
                     edition_type_name=str(item.get("tipo_edicao_nome", "")),
                     pdf_url=f"https://diariodomunicipio.sjc.sp.gov.br/apifront/portal/edicoes/pdf_diario/{edition_id}/",
                 )
                 metadata_list.append(metadata)
-                
+
             except Exception as e:
                 logger.error(f"Erro ao processar item de metadado: {e}")
                 continue

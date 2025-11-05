@@ -1,18 +1,17 @@
 """Orquestrador principal do crawler."""
 
 import asyncio
-import json
 from typing import AsyncIterator
 
 import httpx
 
 from diario_crawler.core.config import CrawlerConfig
 from diario_crawler.http import ConcurrentHttpClient, HttpClient
-from diario_crawler.models import GazetteEdition
+from diario_crawler.models import ArticleMetadata, GazetteEdition
 from diario_crawler.parsers import ContentParser, HtmlStructureParser, MetadataParser
 from diario_crawler.processors import DataProcessor
-from diario_crawler.utils import get_logger, get_workdays
 from diario_crawler.storage import BaseStorage, ParquetStorage
+from diario_crawler.utils import get_logger, get_workdays
 
 logger = get_logger(__name__)
 
@@ -23,7 +22,9 @@ class GazetteCrawler:
     Processa dados em lotes para otimizar uso de memória.
     """
 
-    def __init__(self, config: CrawlerConfig | None = None, storage: BaseStorage | None = None):
+    def __init__(
+        self, config: CrawlerConfig | None = None, storage: BaseStorage | None = None
+    ):
         """
         Args:
             config: Configuração do crawler (usa padrão se None)
@@ -42,9 +43,7 @@ class GazetteCrawler:
         self.storage = storage or ParquetStorage()
 
     def __repr__(self) -> str:
-        return (
-            f"<GazetteCrawler start={self.config.start_date} end={self.config.end_date}>"
-        )
+        return f"<GazetteCrawler start={self.config.start_date} end={self.config.end_date}>"
 
     def create_metadata_urls(self) -> list[str]:
         """Gera URLs para download dos metadados das edições."""
@@ -126,7 +125,9 @@ class GazetteCrawler:
         logger.info(f"Obtidas {len(html_results)} estruturas HTML")
         return html_results
 
-    def parse_articles_from_html(self, html_results: list[dict]) -> list:
+    def parse_articles_from_html(
+        self, html_results: list[dict]
+    ) -> list[ArticleMetadata]:
         """
         Parseia artigos das estruturas HTML usando HtmlStructureParser.
 
@@ -162,7 +163,7 @@ class GazetteCrawler:
         )
         return unique_articles
 
-    async def fetch_content_batch(self, articles: list) -> list[dict]:
+    async def fetch_content_batch(self, articles: list[ArticleMetadata]) -> list[dict]:
         """
         Fase 3: Busca o conteúdo das matérias.
 
@@ -177,7 +178,7 @@ class GazetteCrawler:
             return []
 
         urls = [
-            f"{self.config.CONTENT_BASE_URL}{article.article_id}"
+            f"{self.config.CONTENT_BASE_URL}{article.identifier}"
             for article in articles
         ]
 
@@ -281,32 +282,17 @@ class GazetteCrawler:
 
         logger.info("Crawling em lotes concluído")
 
-    async def run(self) -> list[GazetteEdition]:
+    async def run(self) -> None:
         """
         Executa o crawling completo e retorna todas as edições.
 
         Returns:
             Lista com todas as GazetteEdition processadas
         """
-        all_editions = []
+        all_editions = 0
 
         async for batch in self.run_batched():
-            all_editions.extend(batch)
+            self.storage.save_editions(batch)
+            all_editions += len(batch)
 
-        logger.info(f"Total: {len(all_editions)} edições processadas")
-        return all_editions
-
-    async def run_and_save(self) -> list[GazetteEdition]:
-        """
-        Executa o crawling e salva os dados automaticamente.
-        
-        Returns:
-            Lista com todas as GazetteEdition processadas
-        """
-        editions = await self.run()
-        
-        if editions and self.storage:
-            self.storage.save_editions(editions)
-            logger.info(f"Dados salvos via {type(self.storage).__name__}")
-        
-        return editions
+        logger.info(f"Total: {all_editions} edições processadas")

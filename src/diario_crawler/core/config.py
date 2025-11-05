@@ -8,7 +8,7 @@ class CrawlerConfig:
     """Configurações do crawler."""
 
     # Datas
-    DEFAULT_START_DATE = date(2025, 8, 15)
+    DEFAULT_START_DATE = date(2022, 8, 15)
 
     # Diretórios
     BASE_DATA_DIR = Path("data")

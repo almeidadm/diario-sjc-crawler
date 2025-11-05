@@ -1,9 +1,8 @@
 """Processador para agregação de dados em GazetteEdition."""
 
-import logging
 from typing import Any
 
-from ..models import Article, GazetteEdition, GazetteMetadata, ArticleMetadata
+from ..models import Article, ArticleMetadata, GazetteEdition, GazetteMetadata
 from ..utils import get_logger
 
 logger = get_logger(__name__)
@@ -36,13 +35,15 @@ class DataProcessor:
 
         # Agrupa artigos por edition_id
         articles_by_edition: dict[str, list[Article]] = {}
-        
+
         for item in articles_with_content:
             article_metadata = item["article_metadata"]
             edition_id = article_metadata.edition_id
 
             # Log para debug
-            logger.debug(f"Processando artigo {article_metadata.article_id} para edição {edition_id}")
+            logger.debug(
+                f"Processando artigo {article_metadata.article_id} para edição {edition_id}"
+            )
 
             # Verifica se a edição do artigo existe nos metadados
             if edition_id not in metadata_by_id:
@@ -62,7 +63,9 @@ class DataProcessor:
                 articles_by_edition[edition_id] = []
             articles_by_edition[edition_id].append(article)
 
-        logger.debug(f"Artigos agrupados por edição: { {k: len(v) for k, v in articles_by_edition.items()} }")
+        logger.debug(
+            f"Artigos agrupados por edição: { {k: len(v) for k, v in articles_by_edition.items()} }"
+        )
 
         # Constrói as edições
         editions = []
@@ -70,9 +73,7 @@ class DataProcessor:
             articles = articles_by_edition.get(edition_id, [])
             edition = GazetteEdition(metadata=metadata, articles=articles)
             editions.append(edition)
-            logger.info(
-                f"Edição {edition_id} agregada com {len(articles)} artigos"
-            )
+            logger.info(f"Edição {edition_id} agregada com {len(articles)} artigos")
 
         # Log de edições sem artigos
         editions_without_articles = [e for e in editions if not e.articles]
@@ -87,16 +88,15 @@ class DataProcessor:
 
     @staticmethod
     def create_article(
-        article_metadata: ArticleMetadata, 
-        article_content: Any
+        article_metadata: ArticleMetadata, article_content: Any
     ) -> Article:
         """
         Cria um artigo completo a partir de metadados e conteúdo.
-        
+
         Args:
             article_metadata: Metadados do artigo
             article_content: Conteúdo do artigo
-            
+
         Returns:
             Artigo completo
         """
@@ -112,11 +112,11 @@ class DataProcessor:
     ) -> GazetteEdition:
         """
         Cria uma edição completa do diário.
-        
+
         Args:
             gazette_metadata: Metadados da edição
             articles: Lista de artigos (opcional)
-            
+
         Returns:
             Edição completa do diário
         """

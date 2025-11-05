@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Script CLI principal para execução do crawler do Diário Oficial."""
 
 import asyncio
@@ -51,7 +50,7 @@ Exemplos de uso:
     date_group.add_argument(
         '--days',
         type=int,
-        default=7,
+        default=0,
         help='Número de dias para retroceder a partir de hoje (padrão: 7)'
     )
     
@@ -105,15 +104,18 @@ Exemplos de uso:
 def validate_arguments(args):
     """Valida os argumentos fornecidos."""
     errors = []
-    
+
     # Valida datas
     if args.start_date and args.end_date:
         if args.start_date > args.end_date:
             errors.append("Data inicial não pode ser maior que data final")
-    
-    if args.start_date and args.start_date < date(2022, 8, 15):
-        errors.append(f"Data inicial não pode ser anterior a 2025-08-15")
-    
+
+    # 🔧 Corrigir esta verificação:
+    MIN_DATE = date(2022, 8, 15)
+    if args.start_date and args.start_date < MIN_DATE:
+        errors.append(f"Data inicial ({args.start_date}) não pode ser anterior a {MIN_DATE}")
+
+        
     # Valida números
     if args.batch_size <= 0:
         errors.append("Batch size deve ser positivo")
@@ -121,7 +123,7 @@ def validate_arguments(args):
     if args.max_concurrent <= 0:
         errors.append("Número de requisições concorrentes deve ser positivo")
     
-    if args.days <= 0:
+    if args.days < 0:
         errors.append("Número de dias deve ser positivo")
     
     if errors:
@@ -183,7 +185,7 @@ async def main():
         
         # Executa e salva
         start_time = datetime.now()
-        editions = await crawler.run_and_save()
+        editions = await crawler.run()
         end_time = datetime.now()
         
         # Estatísticas
@@ -212,5 +214,5 @@ async def main():
 
 if __name__ == "__main__":
     from datetime import timedelta  # Move import para evitar circular
-    
+    print(">>> Executando versão mais recente de run_crawler.py")
     asyncio.run(main())
