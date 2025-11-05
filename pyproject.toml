@@ -1,0 +1,50 @@
+[project]
+name = "rag-diario-sjc-crawler"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "almeidadm",email = "almeidadm@outlook.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<4.0"
+dependencies = [
+    "httpx[http2] (>=0.28.1,<0.29.0)",
+    "selectolax (>=0.4.0,<0.5.0)",
+    "rich (>=14.2.0,<15.0.0)",
+    "pandas (>=2.3.3,<3.0.0)",
+    "pyarrow (>=22.0.0,<23.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "diario_crawler", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ipykernel (>=7.1.0,<8.0.0)",
+    "black (>=25.9.0,<26.0.0)",
+    "isort (>=7.0.0,<8.0.0)",
+    "flake8 (>=7.3.0,<8.0.0)",
+    "taskipy (>=1.14.1,<2.0.0)"
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+skip-string-normalization = false
+
+[tool.isort]
+profile = "black"
+line_length = 88
+multi_line_output = 3
+include_trailing_comma = true
+known_first_party = ["src"]
+skip_gitignore = true
+
+[tool.taskipy.tasks]
+lint = "flake8 src"
+format = "isort src && black src"
+check = "task format && task lint"

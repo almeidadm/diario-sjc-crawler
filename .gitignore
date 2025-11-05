@@ -1,0 +1,94 @@
+# =======================================
+# Padrão para projeto Python (Poetry)
+# =======================================
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+ENV/
+
+# Arquivos de dependências e build
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+develop-eggs/
+.installed.cfg
+
+# Caches e metadados
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+.cache/
+pytest_cache/
+.tox/
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.cover
+*.py,cover
+
+# Configurações locais e IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# Arquivos de controle do Poetry
+poetry.lock
+# (opcional — só ignore se for gerado automaticamente no CI/CD)
+# Se quiser versionar o lock file, remova a linha acima
+
+# Notebooks temporários e dados
+notebooks/.ipynb_checkpoints/
+*.ipynb_checkpoints
+data/
+datasets/
+outputs/
+results/
+*.csv
+*.json
+*.parquet
+
+# Documentação e relatórios temporários
+docs/_build/
+*.rst~
+*.md~
+
+# Arquivos de ambiente e credenciais
+.env
+.env.*
+*.secrets
+*.key
+*.pem
+
+# Arquivos de sistema
+.ssh/
+.tmp/
+.DS_Store
+desktop.ini
+
+# Logs de execução
+logs/
+*.log
+
+# Arquivos específicos de testes e relatórios
+test-results/
+reports/
+junit.xml
+
+# =======================================
+# Fim do .gitignore
+# =======================================
