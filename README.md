@@ -1,9 +1,9 @@
-Diário Oficial Crawler - São José dos Campos
+# Diário Oficial Crawler - São José dos Campos
 
-https://img.shields.io/badge/python-3.11+-blue.svg
-https://img.shields.io/badge/packaging-poetry-cyan.svg
-https://img.shields.io/badge/async-await-green.svg
-https://img.shields.io/badge/license-MIT-lightgrey.svg
+![Python Version](https://img.shields.io/badge/python-3.12+-blue.svg)
+![Packaging: Poetry](https://img.shields.io/badge/packaging-poetry-cyan.svg)
+![Async/Await](https://img.shields.io/badge/async-await-green.svg)
+![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey.svg)
 
 Um crawler assíncrono e eficiente para capturar edições e artigos do Diário Oficial de São José dos Campos. Desenvolvido para processamento em larga escala com armazenamento otimizado em formato Parquet. Gerenciado com Poetry para dependências consistentes e empacotamento.
 🚀 Características Principais
