@@ -2,8 +2,8 @@
 
 import logging
 import logging.config
-import sys
 from pathlib import Path
+from typing import Any
 
 
 def setup_logging(
@@ -25,7 +25,7 @@ def setup_logging(
             "[%(filename)s:%(lineno)d]"
         )
 
-    config = {
+    config: dict[str, Any] = {
         "version": 1,
         "disable_existing_loggers": False,
         "formatters": {
@@ -34,28 +34,39 @@ def setup_logging(
                 "datefmt": "%Y-%m-%d %H:%M:%S",
             },
         },
+
         "handlers": {
             "console": {
-                "class": "logging.StreamHandler",
+                "()": "rich.logging.RichHandler",
+                "level": level,
+                "markup": True,
+                "rich_tracebacks": True,
+                "show_time": True,
+                "show_path": True,
+                "log_time_format": "%H:%M:%S",
+            },
+            "file": {
+                "class": "logging.FileHandler",
                 "level": level,
                 "formatter": "standard",
-                "stream": sys.stdout,
+                "filename": "app.log",
+                "mode": "a",
+                "encoding": "utf-8",
             },
         },
         "loggers": {
             "diario_crawler": {
-                "handlers": ["console"],
+                "handlers": ["file"],
                 "level": level,
                 "propagate": False,
             },
         },
         "root": {
-            "handlers": ["console"],
-            "level": "WARNING",
+            "handlers": ["file"],
+            "level": level,
         },
     }
 
-    # Adiciona handler de arquivo se especificado
     if log_file:
         log_path = Path(log_file)
         log_path.parent.mkdir(parents=True, exist_ok=True)
