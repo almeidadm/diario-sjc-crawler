@@ -282,17 +282,22 @@ class GazetteCrawler:
 
         logger.info("Crawling em lotes concluído")
 
-    async def run(self) -> None:
+    async def run(self) -> int:
         """
         Executa o crawling completo e retorna todas as edições.
 
         Returns:
             Lista com todas as GazetteEdition processadas
         """
-        all_editions = 0
+        n_editions = 0
+        n_articles = 0
 
         async for batch in self.run_batched():
             self.storage.save_editions(batch)
-            all_editions += len(batch)
+            n_editions += len(batch)
+            n_articles += sum([len(g.articles) for g in batch])
 
-        logger.info(f"Total: {all_editions} edições processadas")
+        logger.info(f"Total: {n_editions} edições processadas")
+        logger.info(f"Total: {n_articles} artigos processadas")
+
+        return n_editions, n_articles

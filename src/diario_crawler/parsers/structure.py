@@ -52,11 +52,11 @@ class HtmlStructureParser:
                 for link in li.css("a.linkMateria"):
                     try:
                         article = ArticleMetadata(
-                            article_id=link.attributes.get("data-materia-id", ""),
+                            article_id=str(link.attributes.get("data-materia-id", "")),
                             edition_id=edition_id,  # Usa o edition_id passado, não do data-id
                             hierarchy_path=path.copy(),
                             title=link.text(strip=True),
-                            identifier=link.attributes.get("identificador"),
+                            identifier=str(link.attributes.get("identificador")),
                             protocol=link.attributes.get("data-protocolo"),
                         )
                         articles.append(article)

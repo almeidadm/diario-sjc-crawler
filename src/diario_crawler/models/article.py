@@ -13,7 +13,7 @@ class ArticleMetadata:
     edition_id: str
     hierarchy_path: list[str]
     title: str
-    identifier: str | None = None
+    identifier: str
     protocol: str | None = None
 
     @property
