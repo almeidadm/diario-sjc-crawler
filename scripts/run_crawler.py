@@ -2,11 +2,13 @@
 
 import asyncio
 import sys
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 src_path = Path(__file__).parent.parent / "src"
 sys.path.insert(0, str(src_path))
+
+from rich import print
 
 from diario_crawler.core import GazetteCrawler, CrawlerConfig
 from diario_crawler.storage import ParquetStorage
@@ -166,7 +168,6 @@ async def main():
     logger.info(f"Diretório de saída: {args.output_dir}")
     
     try:
-        # Configuração do crawler
         config = CrawlerConfig(
             start_date=start_date,
             end_date=end_date,
@@ -174,35 +175,27 @@ async def main():
             max_concurrent=args.max_concurrent,
         )
         
-        # Storage
         storage = ParquetStorage(
             base_path=args.output_dir,
             partition_by=args.partition_by,
         )
         
-        # Crawler
         crawler = GazetteCrawler(config=config, storage=storage)
         
-        # Executa e salva
         start_time = datetime.now()
-        editions = await crawler.run()
+        editions, articles = await crawler.run()
         end_time = datetime.now()
         
-        # Estatísticas
-        total_articles = sum(len(edition.articles) for edition in editions)
         execution_time = (end_time - start_time).total_seconds()
         
-        logger.info("=" * 50)
-        logger.info("EXECUÇÃO CONCLUÍDA")
-        logger.info("=" * 50)
-        logger.info(f"Edições processadas: {len(editions)}")
-        logger.info(f"Artigos processados: {total_articles}")
-        logger.info(f"Tempo de execução: {execution_time:.2f} segundos")
-        logger.info(f"Taxa: {total_articles/execution_time:.2f} artigos/segundo")
-        
-        # Log de edições específicas
-        for edition in editions:
-            logger.info(f" - {edition.edition_id}: {len(edition.articles)} artigos")
+        print("=" * 50)
+        print("EXECUÇÃO CONCLUÍDA")
+        print("=" * 50)
+        print(f"Edições processadas: {editions}")
+        print(f"Artigos processados: {articles}")
+        print(f"Tempo de execução: {execution_time:.2f} segundos")
+        print(f"Taxa: {editions/execution_time:.2f} edições/segundo")
+        print(f"Taxa: {articles/execution_time:.2f} artigos/segundo")
             
     except KeyboardInterrupt:
         logger.info("Execução interrompida pelo usuário")
@@ -213,6 +206,4 @@ async def main():
 
 
 if __name__ == "__main__":
-    from datetime import timedelta  # Move import para evitar circular
-    print(">>> Executando versão mais recente de run_crawler.py")
     asyncio.run(main())
