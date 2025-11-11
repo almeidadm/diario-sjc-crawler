@@ -1,0 +1,54 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - httpbin.org
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://httpbin.org/status/404
+  response:
+    body:
+      string: ''
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Sat, 08 Nov 2025 23:25:20 GMT
+      Server:
+      - gunicorn/19.9.0
+    status:
+      code: 404
+      message: NOT FOUND
+version: 1

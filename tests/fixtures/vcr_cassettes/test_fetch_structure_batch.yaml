@@ -1,0 +1,200 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - diariodomunicipio.sjc.sp.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://diariodomunicipio.sjc.sp.gov.br/apifront/portal/edicoes/edicoes_from_data/2024-01-03.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2024-01-03","numero":null,"ano":"","itens":[{"id":1905,"data":"03\/01\/2024","suplemento":"","numero":3141,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        do Munic\u00edpio","capa":1,"paginas":10}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '232'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 08 Nov 2025 23:25:29 GMT
+      Keep-Alive:
+      - timeout=5, max=100
+      Server:
+      - Apache/2.4.52 (Ubuntu)
+      Set-Cookie:
+      - CAKEPHP=iih98ubo4ka643ajmr5pdm6fkt; expires=Sun, 09-Nov-2025 05:25:29 GMT;
+        Max-Age=21600; path=/; secure; HttpOnly
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - diariodomunicipio.sjc.sp.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://diariodomunicipio.sjc.sp.gov.br/portal/visualizacoes/view_html_diario/1905
+  response:
+    body:
+      string: "<ul id=\"tree\" class=\"filetree\">\r\n\t<li><span class=\"folder\">Leis</span>\r\n\t\t<ul>\r\n\t\t\t<li><span
+        class=\"file\"><a class=\"linkMateria\" identificador=\"5228\" pagina=\"\"
+        \ > 5228 - 03.01.2024 - LEIS</a>\n                </span>\r\n\t\t\t</li>\r\n\t\t</ul>\r\n\t</li>\r\n\t<li><span
+        class=\"folder\">Decretos</span>\r\n\t\t<ul>\r\n\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5229\" pagina=\"\"  > 5229 - 03.01.2024
+        - DECRETOS</a>\n                </span>\r\n\t\t\t</li>\r\n\t\t</ul>\r\n\t</li>\r\n\t<li><span
+        class=\"folder\">Editais</span>\r\n\t\t<ul>\r\n\t\t\t<li><span class=\"folder\">Secretaria
+        de Apoio Jur\xEDdico</span>\r\n\t\t\t\t<ul>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5231\" pagina=\"\"  > 5231 - 01.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5232\" pagina=\"\"  > 5232 - 02.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5233\" pagina=\"\"  > 5233 - 03.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5234\" pagina=\"\"  > 5234 - 04.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5235\" pagina=\"\"  > 5235 - 05.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5236\" pagina=\"\"  > 5236 - 06.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5237\" pagina=\"\"  > 5237 - 07.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5238\" pagina=\"\"  > 5238 - 08.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5239\" pagina=\"\"  > 5239 - 09.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5240\" pagina=\"\"  > 5240 - 10.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5241\" pagina=\"\"  > 5241 - 11.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5242\" pagina=\"\"  > 5242 - 12.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5243\" pagina=\"\"  > 5243 - 13.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5244\" pagina=\"\"  > 5244 - 14.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5245\" pagina=\"\"  > 5245 - 15.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5246\" pagina=\"\"  > 5246 - 16.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5247\" pagina=\"\"  > 5247 - 17.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5248\" pagina=\"\"  > 5248 - 18.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5249\" pagina=\"\"  > 5249 - 19.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5251\" pagina=\"\"  > 5251 - 20.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5252\" pagina=\"\"  > 5252 - 21.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5253\" pagina=\"\"  > 5253 - 22.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5254\" pagina=\"\"  > 5254 - 23.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5255\" pagina=\"\"  > 5255 - 24.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5256\" pagina=\"\"  > 5256 - 25.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5257\" pagina=\"\"  > 5257 - 26.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5258\" pagina=\"\"  > 5258 - 27.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5259\" pagina=\"\"  > 5259 - 28.2023</a>\n
+        \               </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t</ul>\r\n\t\t\t</li>\r\n\t\t</ul>\r\n\t</li>\r\n\t<li><span
+        class=\"folder\">Licita\xE7\xF5es</span>\r\n\t\t<ul>\r\n\t\t\t<li><span class=\"folder\">Secretaria
+        de Gest\xE3o Administrativa e Finan\xE7as</span>\r\n\t\t\t\t<ul>\r\n\t\t\t\t\t<li><span
+        class=\"file\"><a class=\"linkMateria\" identificador=\"5250\" pagina=\"\"
+        \ > 5250 - 03-01-2024 - 030124</a>\n                </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t</ul>\r\n\t\t\t</li>\r\n\t\t</ul>\r\n\t</li>\r\n\t<li><span
+        class=\"folder\">Contratos</span>\r\n\t\t<ul>\r\n\t\t\t<li><span class=\"folder\">Secretaria
+        de Apoio Jur\xEDdico</span>\r\n\t\t\t\t<ul>\r\n\t\t\t\t\t<li><span class=\"file\"><a
+        class=\"linkMateria\" identificador=\"5260\" pagina=\"\"  > 5260 - 03.01.2024
+        - CONTRATOS</a>\n                </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t</ul>\r\n\t\t\t</li>\r\n\t\t</ul>\r\n\t</li>\r\n\t<li><span
+        class=\"folder\">Funda\xE7\xE3o Cultural</span>\r\n\t\t<ul>\r\n\t\t\t<li><span
+        class=\"file\"><a class=\"linkMateria\" identificador=\"5227\" pagina=\"\"
+        \ > 5227 - 03-01 enviada 03-01</a>\n                </span>\r\n\t\t\t</li>\r\n\t\t</ul>\r\n\t</li>\r\n\t<li><span
+        class=\"folder\">Outros</span>\r\n\t\t<ul>\r\n\t\t\t<li><span class=\"folder\">Secretaria
+        de Gest\xE3o Administrativa e Finan\xE7as</span>\r\n\t\t\t\t<ul>\r\n\t\t\t\t\t<li><span
+        class=\"file\"><a class=\"linkMateria\" identificador=\"5230\" pagina=\"\"
+        \ > 5230 - 03-01-2024 Lei 9452 Di\xE1rio do Municipio 030124</a>\n                </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t</ul>\r\n\t\t\t</li>\r\n\t\t\t<li><span
+        class=\"folder\">Secretaria de Sa\xFAde</span>\r\n\t\t\t\t<ul>\r\n\t\t\t\t\t<li><span
+        class=\"file\"><a class=\"linkMateria\" identificador=\"5226\" pagina=\"\"
+        \ > 5226 - Public_02.01.2024</a>\n                </span>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t</ul>\r\n\t\t\t</li>\r\n\t\t</ul>\r\n\t</li>\r\n</ul>"
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Sat, 08 Nov 2025 23:25:29 GMT
+      Keep-Alive:
+      - timeout=5, max=100
+      Server:
+      - Apache/2.4.52 (Ubuntu)
+      Set-Cookie:
+      - CAKEPHP=kckodbbh71502r7l4irf8ciruk; expires=Sun, 09-Nov-2025 05:25:30 GMT;
+        Max-Age=21600; path=/; secure; HttpOnly
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      content-length:
+      - '6073'
+    status:
+      code: 200
+      message: OK
+version: 1

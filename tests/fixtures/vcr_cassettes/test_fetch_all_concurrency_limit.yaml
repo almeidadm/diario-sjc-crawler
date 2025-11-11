@@ -1,0 +1,307 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - httpbin.org
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://httpbin.org/get?i=1
+  response:
+    body:
+      string: "{\n  \"args\": {\n    \"i\": \"1\"\n  }, \n  \"headers\": {\n    \"Accept\":
+        \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate, br, zstd\", \n    \"Accept-Language\":
+        \"pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3\", \n    \"Host\": \"httpbin.org\",
+        \n    \"Priority\": \"u=0\", \n    \"Referer\": \"https://diariodomunicipio.sjc.sp.gov.br/\",
+        \n    \"Sec-Fetch-Dest\": \"empty\", \n    \"Sec-Fetch-Mode\": \"cors\", \n
+        \   \"Sec-Fetch-Site\": \"same-origin\", \n    \"Sec-Gpc\": \"1\", \n    \"User-Agent\":
+        \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0\",
+        \n    \"X-Amzn-Trace-Id\": \"Root=1-690fd167-5c1768f90f4e5e1226d7a849\", \n
+        \   \"X-Requested-With\": \"XMLHttpRequest\"\n  }, \n  \"origin\": \"177.131.135.181\",
+        \n  \"url\": \"https://httpbin.org/get?i=1\"\n}\n"
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '707'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 08 Nov 2025 23:25:27 GMT
+      Server:
+      - gunicorn/19.9.0
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - httpbin.org
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://httpbin.org/get?i=0
+  response:
+    body:
+      string: "{\n  \"args\": {\n    \"i\": \"0\"\n  }, \n  \"headers\": {\n    \"Accept\":
+        \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate, br, zstd\", \n    \"Accept-Language\":
+        \"pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3\", \n    \"Host\": \"httpbin.org\",
+        \n    \"Priority\": \"u=0\", \n    \"Referer\": \"https://diariodomunicipio.sjc.sp.gov.br/\",
+        \n    \"Sec-Fetch-Dest\": \"empty\", \n    \"Sec-Fetch-Mode\": \"cors\", \n
+        \   \"Sec-Fetch-Site\": \"same-origin\", \n    \"Sec-Gpc\": \"1\", \n    \"User-Agent\":
+        \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0\",
+        \n    \"X-Amzn-Trace-Id\": \"Root=1-690fd167-42b3af8a0613d81b2ce2857f\", \n
+        \   \"X-Requested-With\": \"XMLHttpRequest\"\n  }, \n  \"origin\": \"177.131.135.181\",
+        \n  \"url\": \"https://httpbin.org/get?i=0\"\n}\n"
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '707'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 08 Nov 2025 23:25:27 GMT
+      Server:
+      - gunicorn/19.9.0
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - httpbin.org
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://httpbin.org/get?i=2
+  response:
+    body:
+      string: "{\n  \"args\": {\n    \"i\": \"2\"\n  }, \n  \"headers\": {\n    \"Accept\":
+        \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate, br, zstd\", \n    \"Accept-Language\":
+        \"pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3\", \n    \"Host\": \"httpbin.org\",
+        \n    \"Priority\": \"u=0\", \n    \"Referer\": \"https://diariodomunicipio.sjc.sp.gov.br/\",
+        \n    \"Sec-Fetch-Dest\": \"empty\", \n    \"Sec-Fetch-Mode\": \"cors\", \n
+        \   \"Sec-Fetch-Site\": \"same-origin\", \n    \"Sec-Gpc\": \"1\", \n    \"User-Agent\":
+        \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0\",
+        \n    \"X-Amzn-Trace-Id\": \"Root=1-690fd167-01d8a90234186eb07ec56136\", \n
+        \   \"X-Requested-With\": \"XMLHttpRequest\"\n  }, \n  \"origin\": \"177.131.135.181\",
+        \n  \"url\": \"https://httpbin.org/get?i=2\"\n}\n"
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '707'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 08 Nov 2025 23:25:27 GMT
+      Server:
+      - gunicorn/19.9.0
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - httpbin.org
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://httpbin.org/get?i=3
+  response:
+    body:
+      string: "{\n  \"args\": {\n    \"i\": \"3\"\n  }, \n  \"headers\": {\n    \"Accept\":
+        \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate, br, zstd\", \n    \"Accept-Language\":
+        \"pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3\", \n    \"Host\": \"httpbin.org\",
+        \n    \"Priority\": \"u=0\", \n    \"Referer\": \"https://diariodomunicipio.sjc.sp.gov.br/\",
+        \n    \"Sec-Fetch-Dest\": \"empty\", \n    \"Sec-Fetch-Mode\": \"cors\", \n
+        \   \"Sec-Fetch-Site\": \"same-origin\", \n    \"Sec-Gpc\": \"1\", \n    \"User-Agent\":
+        \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0\",
+        \n    \"X-Amzn-Trace-Id\": \"Root=1-690fd167-410a85bb27b26ba06600d39c\", \n
+        \   \"X-Requested-With\": \"XMLHttpRequest\"\n  }, \n  \"origin\": \"177.131.135.181\",
+        \n  \"url\": \"https://httpbin.org/get?i=3\"\n}\n"
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '707'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 08 Nov 2025 23:25:27 GMT
+      Server:
+      - gunicorn/19.9.0
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - httpbin.org
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://httpbin.org/get?i=4
+  response:
+    body:
+      string: "{\n  \"args\": {\n    \"i\": \"4\"\n  }, \n  \"headers\": {\n    \"Accept\":
+        \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate, br, zstd\", \n    \"Accept-Language\":
+        \"pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3\", \n    \"Host\": \"httpbin.org\",
+        \n    \"Priority\": \"u=0\", \n    \"Referer\": \"https://diariodomunicipio.sjc.sp.gov.br/\",
+        \n    \"Sec-Fetch-Dest\": \"empty\", \n    \"Sec-Fetch-Mode\": \"cors\", \n
+        \   \"Sec-Fetch-Site\": \"same-origin\", \n    \"Sec-Gpc\": \"1\", \n    \"User-Agent\":
+        \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0\",
+        \n    \"X-Amzn-Trace-Id\": \"Root=1-690fd167-324841d010d60ec51554312e\", \n
+        \   \"X-Requested-With\": \"XMLHttpRequest\"\n  }, \n  \"origin\": \"177.131.135.181\",
+        \n  \"url\": \"https://httpbin.org/get?i=4\"\n}\n"
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '707'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 08 Nov 2025 23:25:27 GMT
+      Server:
+      - gunicorn/19.9.0
+    status:
+      code: 200
+      message: OK
+version: 1
