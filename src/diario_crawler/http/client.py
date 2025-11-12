@@ -4,12 +4,12 @@ import logging
 
 import httpx
 from tenacity import (
+    after_log,
+    before_sleep_log,
     retry,
     retry_if_exception_type,
     stop_after_attempt,
     wait_exponential,
-    before_sleep_log,
-    after_log,
 )
 
 logger = logging.getLogger(__name__)
@@ -116,6 +116,7 @@ class HttpClient:
         Returns:
             Response HTTP ou None em caso de erro não recuperável
         """
+
         # Cria uma função wrapper com retry específica para esta URL
         @retry(
             retry=retry_if_exception_type(
@@ -154,7 +155,9 @@ class HttpClient:
         try:
             result = await _fetch_with_retry()
             if result is None:
-                logger.error(f"Falha ao obter resposta para {url} após {max_retries} tentativas")
+                logger.error(
+                    f"Falha ao obter resposta para {url} após {max_retries} tentativas"
+                )
             return result
         except Exception as e:
             # Captura qualquer exceção não tratada após todos os retries

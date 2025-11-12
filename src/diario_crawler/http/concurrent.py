@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 class ConcurrentHttpClient:
     """
     Cliente HTTP para requisições concorrentes com limitação via asyncio.Semaphore.
-    
+
     O retry é gerenciado pelo HttpClient base usando tenacity.
     Esta classe apenas gerencia a concorrência com semáforo.
     """
@@ -39,7 +39,7 @@ class ConcurrentHttpClient:
     ) -> list[httpx.Response | None]:
         """
         Realiza múltiplas requisições concorrentes com limitação via asyncio.Semaphore.
-        
+
         O retry é gerenciado pelo HttpClient base usando tenacity.
 
         Args:
