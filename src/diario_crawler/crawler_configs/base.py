@@ -1,14 +1,14 @@
-"""Configurações e constantes do crawler."""
-
 from datetime import date
 from pathlib import Path
 
 
-class CrawlerConfig:
-    """Configurações do crawler."""
+class BaseCrawlerConfig:
+    """Configurações e constantes do crawler."""
 
-    # Datas
-    DEFAULT_START_DATE = date(2022, 8, 15)
+    # Município
+    NAME: str  # sp_sao_jose_dos_campos
+    DEFAULT_START_DATE: date  # date(2022, 8, 15)
+    DOMAIN_URL: str  # "https://diariodomunicipio.sjc.sp.gov.br"
 
     # Diretórios
     BASE_DATA_DIR = Path("data")
@@ -21,11 +21,9 @@ class CrawlerConfig:
     MAX_RETRIES = 3
 
     # URLs base
-    METADATA_BASE_URL = "https://diariodomunicipio.sjc.sp.gov.br/apifront/portal/edicoes/edicoes_from_data/"
-    HTML_BASE_URL = (
-        "https://diariodomunicipio.sjc.sp.gov.br/portal/visualizacoes/view_html_diario/"
-    )
-    CONTENT_BASE_URL = "https://diariodomunicipio.sjc.sp.gov.br/apifront/portal/edicoes/publicacoes_ver_conteudo/"
+    METADATA_URL = "/apifront/portal/edicoes/edicoes_from_data/"
+    HTML_URL = "/portal/visualizacoes/view_html_diario/"
+    CONTENT_URL = "/apifront/portal/edicoes/publicacoes_ver_conteudo/"
 
     # Timeouts (em segundos)
     CONNECT_TIMEOUT = 10.0

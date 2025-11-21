@@ -5,12 +5,12 @@ from typing import AsyncIterator
 
 import httpx
 
-from diario_crawler.core.config import CrawlerConfig
-from diario_crawler.http import ConcurrentHttpClient, HttpClient
-from diario_crawler.models import ArticleMetadata, GazetteEdition
+from diario_crawler.core.clients import ConcurrentHttpClient, HttpClient
+from diario_crawler.crawler_configs.base import BaseCrawlerConfig
+from diario_crawler.models import ArticleMetadata, GazetteEdition, GazetteMetadata
 from diario_crawler.parsers import ContentParser, HtmlStructureParser, MetadataParser
 from diario_crawler.processors import DataProcessor
-from diario_crawler.storage import BaseStorage, ParquetStorage
+from diario_crawler.storage import ParquetStorage
 from diario_crawler.utils import get_logger, get_workdays
 
 logger = get_logger(__name__)
@@ -22,14 +22,12 @@ class GazetteCrawler:
     Processa dados em lotes para otimizar uso de memória.
     """
 
-    def __init__(
-        self, config: CrawlerConfig | None = None, storage: BaseStorage | None = None
-    ):
+    def __init__(self, config: BaseCrawlerConfig, storage: ParquetStorage):
         """
         Args:
             config: Configuração do crawler (usa padrão se None)
         """
-        self.config = config or CrawlerConfig()
+        self.config = config
 
         self.http_client = HttpClient()
         self.concurrent_client = ConcurrentHttpClient(
@@ -40,7 +38,7 @@ class GazetteCrawler:
         self.structure_parser = HtmlStructureParser()
         self.content_parser = ContentParser()
         self.data_processor = DataProcessor()
-        self.storage = storage or ParquetStorage()
+        self.storage = storage
 
     def __repr__(self) -> str:
         return f"<GazetteCrawler start={self.config.start_date} end={self.config.end_date}>"
@@ -48,11 +46,12 @@ class GazetteCrawler:
     def create_metadata_urls(self) -> list[str]:
         """Gera URLs para download dos metadados das edições."""
         dates = get_workdays(start=self.config.start_date, end=self.config.end_date)
-        return [f"{self.config.METADATA_BASE_URL}{dt:%Y-%m-%d}.json" for dt in dates]
+        return [
+            f"{self.config.DOMAIN_URL}{self.config.METADATA_URL}{dt:%Y-%m-%d}.json"
+            for dt in dates
+        ]
 
-    async def fetch_metadata_batch(
-        self, urls: list[str]
-    ) -> tuple[list, dict[str, str]]:
+    async def fetch_metadata_batch(self, urls: list[str]) -> list[GazetteMetadata]:
         """
         Fase 1: Download dos metadados das edições.
 
@@ -65,7 +64,6 @@ class GazetteCrawler:
             responses = await self.concurrent_client.fetch_all(urls, client)
 
         all_metadata = []
-        gazette_id_map = {}
 
         for response in responses:
             if not response:
@@ -73,9 +71,6 @@ class GazetteCrawler:
 
             try:
                 metadata_list = self.metadata_parser.parse(response)
-
-                for metadata in metadata_list:
-                    gazette_id_map[metadata.edition_id] = metadata.pdf_url
 
                 all_metadata.extend(metadata_list)
                 logger.debug(f"Metadados extraídos: {len(metadata_list)}")
@@ -85,7 +80,7 @@ class GazetteCrawler:
                 continue
 
         logger.info(f"Extraídos {len(all_metadata)} metadados de {len(urls)} URLs")
-        return all_metadata, gazette_id_map
+        return all_metadata
 
     async def fetch_structure_batch(self, metadata_list: list) -> list[dict]:
         """
@@ -99,7 +94,7 @@ class GazetteCrawler:
             return []
 
         urls = [
-            f"{self.config.HTML_BASE_URL}{metadata.edition_id}"
+            f"{self.config.DOMAIN_URL}{self.config.HTML_URL}{metadata.edition_id}"
             for metadata in metadata_list
         ]
 
@@ -178,7 +173,7 @@ class GazetteCrawler:
             return []
 
         urls = [
-            f"{self.config.CONTENT_BASE_URL}{article.identifier}"
+            f"{self.config.DOMAIN_URL}{self.config.CONTENT_URL}{article.identifier}"
             for article in articles
         ]
 
@@ -220,7 +215,7 @@ class GazetteCrawler:
             Lista de GazetteEdition com artigos e conteúdos
         """
         # Fase 1: Metadados das edições
-        metadata_list, gazette_id_map = await self.fetch_metadata_batch(urls)
+        metadata_list = await self.fetch_metadata_batch(urls)
 
         if not metadata_list:
             logger.warning("Lote sem metadados válidos")
@@ -293,7 +288,7 @@ class GazetteCrawler:
         n_articles = 0
 
         async for batch in self.run_batched():
-            self.storage.save_editions(batch)
+            self.storage.save_editions(batch, municipality=self.config.NAME)
             n_editions += len(batch)
             n_articles += sum([len(g.articles) for g in batch])
 
