@@ -1,6 +1,12 @@
-"""Módulo de storage para dados do crawler."""
+from diario_crawler.storage.base import StorageBackend
+from diario_crawler.storage.local import LocalBackend
+from diario_crawler.storage.minio import MinIOBackend
+from diario_crawler.storage.parquet import MockStorage, ParquetStorage
 
-from .base import BaseStorage
-from .parquet_storage import ParquetStorage
-
-__all__ = ["ParquetStorage", "BaseStorage"]
+__all__ = [
+    "StorageBackend",
+    "LocalBackend",
+    "MinIOBackend",
+    "ParquetStorage",
+    "MockStorage",
+]
