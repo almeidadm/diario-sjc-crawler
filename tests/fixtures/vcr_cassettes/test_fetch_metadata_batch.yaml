@@ -167,4 +167,2031 @@ interactions:
     status:
       code: 200
       message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-03.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-03","numero":null,"ano":"","itens":[{"id":7706,"data":"03\/01\/2023","suplemento":0,"numero":25896,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":93}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '245'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:09 GMT
+      Keep-Alive:
+      - timeout=5, max=100
+      Server:
+      - Apache
+      Set-Cookie:
+      - CAKEPHP=uev70tuoppav2bpb1ke537gpsg; expires=Tue, 18-Nov-2025 03:25:10 GMT;
+        Max-Age=21600; path=/; secure; HttpOnly
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-05.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-05","numero":null,"ano":"","itens":[{"id":7720,"data":"05\/01\/2023","suplemento":1,"numero":25898,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":2},{"id":7718,"data":"05\/01\/2023","suplemento":0,"numero":25898,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":83}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '413'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:10 GMT
+      Keep-Alive:
+      - timeout=5, max=99
+      Server:
+      - Apache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-06.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-06","numero":null,"ano":"","itens":[{"id":7727,"data":"06\/01\/2023","suplemento":1,"numero":25899,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":3},{"id":7725,"data":"06\/01\/2023","suplemento":0,"numero":25899,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":140}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '414'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:10 GMT
+      Keep-Alive:
+      - timeout=5, max=98
+      Server:
+      - Apache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-09.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-09","numero":null,"ano":"","itens":[{"id":7730,"data":"09\/01\/2023","suplemento":0,"numero":25900,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":90}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '245'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:10 GMT
+      Keep-Alive:
+      - timeout=5, max=97
+      Server:
+      - Apache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-10.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-10","numero":null,"ano":"","itens":[{"id":7737,"data":"10\/01\/2023","suplemento":0,"numero":25901,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":89}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '245'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:10 GMT
+      Keep-Alive:
+      - timeout=5, max=96
+      Server:
+      - Apache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-11.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-11","numero":null,"ano":"","itens":[{"id":7742,"data":"11\/01\/2023","suplemento":0,"numero":25902,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":95}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '245'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:10 GMT
+      Keep-Alive:
+      - timeout=5, max=95
+      Server:
+      - Apache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-04.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-04","numero":null,"ano":"","itens":[{"id":7713,"data":"04\/01\/2023","suplemento":0,"numero":25897,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":80}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '245'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:10 GMT
+      Keep-Alive:
+      - timeout=5, max=100
+      Server:
+      - Apache
+      Set-Cookie:
+      - CAKEPHP=ek13jhi29gb00b1cce9o8eoti4; expires=Tue, 18-Nov-2025 03:25:11 GMT;
+        Max-Age=21600; path=/; secure; HttpOnly
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-12.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-12","numero":null,"ano":"","itens":[{"id":7744,"data":"12\/01\/2023","suplemento":0,"numero":25903,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":139}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '246'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:11 GMT
+      Keep-Alive:
+      - timeout=5, max=94
+      Server:
+      - Apache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-13.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-13","numero":null,"ano":"","itens":[{"id":7751,"data":"13\/01\/2023","suplemento":0,"numero":25904,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":109}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '246'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:11 GMT
+      Keep-Alive:
+      - timeout=5, max=99
+      Server:
+      - Apache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-16.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-16","numero":null,"ano":"","itens":[{"id":7758,"data":"16\/01\/2023","suplemento":0,"numero":25905,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":107}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '246'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:11 GMT
+      Keep-Alive:
+      - timeout=5, max=93
+      Server:
+      - Apache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-17.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-17","numero":null,"ano":"","itens":[{"id":7761,"data":"17\/01\/2023","suplemento":0,"numero":25906,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":93}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '245'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:11 GMT
+      Keep-Alive:
+      - timeout=5, max=98
+      Server:
+      - Apache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-18.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-18","numero":null,"ano":"","itens":[{"id":7764,"data":"18\/01\/2023","suplemento":0,"numero":25907,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":98}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '245'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:11 GMT
+      Keep-Alive:
+      - timeout=5, max=92
+      Server:
+      - Apache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-19.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-19","numero":null,"ano":"","itens":[{"id":7770,"data":"19\/01\/2023","suplemento":1,"numero":25908,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":2},{"id":7767,"data":"19\/01\/2023","suplemento":0,"numero":25908,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":88}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '413'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:11 GMT
+      Keep-Alive:
+      - timeout=5, max=97
+      Server:
+      - Apache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-20.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-20","numero":null,"ano":"","itens":[{"id":7773,"data":"20\/01\/2023","suplemento":0,"numero":25909,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":124}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '246'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:11 GMT
+      Keep-Alive:
+      - timeout=5, max=91
+      Server:
+      - Apache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-23.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-23","numero":null,"ano":"","itens":[{"id":7776,"data":"23\/01\/2023","suplemento":0,"numero":25910,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":103}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '246'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:11 GMT
+      Keep-Alive:
+      - timeout=5, max=96
+      Server:
+      - Apache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-24.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-24","numero":null,"ano":"","itens":[{"id":7779,"data":"24\/01\/2023","suplemento":0,"numero":25911,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":99}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '245'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:11 GMT
+      Keep-Alive:
+      - timeout=5, max=90
+      Server:
+      - Apache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-25.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-25","numero":null,"ano":"","itens":[{"id":7782,"data":"25\/01\/2023","suplemento":0,"numero":25912,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":141}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '246'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:11 GMT
+      Keep-Alive:
+      - timeout=5, max=95
+      Server:
+      - Apache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-26.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-26","numero":null,"ano":"","itens":[{"id":7786,"data":"26\/01\/2023","suplemento":0,"numero":25913,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":98}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '245'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:11 GMT
+      Keep-Alive:
+      - timeout=5, max=89
+      Server:
+      - Apache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-27.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-27","numero":null,"ano":"","itens":[{"id":7791,"data":"27\/01\/2023","suplemento":0,"numero":25914,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":98}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '245'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:11 GMT
+      Keep-Alive:
+      - timeout=5, max=94
+      Server:
+      - Apache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-30.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-30","numero":null,"ano":"","itens":[{"id":7794,"data":"30\/01\/2023","suplemento":0,"numero":25915,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":206}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '246'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:11 GMT
+      Keep-Alive:
+      - timeout=5, max=88
+      Server:
+      - Apache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-31.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-31","numero":null,"ano":"","itens":[{"id":7798,"data":"31\/01\/2023","suplemento":0,"numero":25916,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":99}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '245'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:11 GMT
+      Keep-Alive:
+      - timeout=5, max=93
+      Server:
+      - Apache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-02-01.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-02-01","numero":null,"ano":"","itens":[{"id":7801,"data":"01\/02\/2023","suplemento":0,"numero":25917,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":128}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '246'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:12 GMT
+      Keep-Alive:
+      - timeout=5, max=87
+      Server:
+      - Apache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-01-02.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-01-02","numero":null,"ano":"","itens":[{"id":7703,"data":"02\/01\/2023","suplemento":0,"numero":25895,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":104}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '246'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:12 GMT
+      Keep-Alive:
+      - timeout=5, max=100
+      Server:
+      - Apache
+      Set-Cookie:
+      - CAKEPHP=cg52u3bscr8dcc56epof4pdcg0; expires=Tue, 18-Nov-2025 03:25:12 GMT;
+        Max-Age=21600; path=/; secure; HttpOnly
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - ioes.dio.es.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://ioes.dio.es.gov.br/apifront/portal/edicoes/edicoes_from_data/2023-02-02.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2023-02-02","numero":null,"ano":"","itens":[{"id":7804,"data":"02\/02\/2023","suplemento":0,"numero":25918,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial do Esp\u00edrito Santo","capa":1,"paginas":107}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '246'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:25:12 GMT
+      Keep-Alive:
+      - timeout=5, max=92
+      Server:
+      - Apache
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - do.corumba.ms.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://do.corumba.ms.gov.br/apifront/portal/edicoes/edicoes_from_data/2012-06-28.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2012-06-28","numero":null,"ano":"","itens":[{"id":6,"data":"28\/06\/2012","suplemento":0,"numero":3,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial de Corumb\u00e1","capa":1,"paginas":0}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '230'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:28:27 GMT
+      Keep-Alive:
+      - timeout=5, max=100
+      Server:
+      - Apache/2.4.52 (Ubuntu)
+      Set-Cookie:
+      - CAKEPHP=2m1njq9ftasoooqgm3nlibpo54; expires=Tue, 18-Nov-2025 03:28:27 GMT;
+        Max-Age=21600; path=/; secure; HttpOnly
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - do.corumba.ms.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://do.corumba.ms.gov.br/apifront/portal/edicoes/edicoes_from_data/2012-06-27.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2012-06-27","numero":null,"ano":"","itens":[{"id":5,"data":"27\/06\/2012","suplemento":0,"numero":2,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial de Corumb\u00e1","capa":1,"paginas":0}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '230'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:28:27 GMT
+      Keep-Alive:
+      - timeout=5, max=100
+      Server:
+      - Apache/2.4.52 (Ubuntu)
+      Set-Cookie:
+      - CAKEPHP=pla5su194rvhjmnefqa53vg6di; expires=Tue, 18-Nov-2025 03:28:27 GMT;
+        Max-Age=21600; path=/; secure; HttpOnly
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - do.corumba.ms.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://do.corumba.ms.gov.br/apifront/portal/edicoes/edicoes_from_data/2012-06-26.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2012-06-26","numero":null,"ano":"","itens":[{"id":1,"data":"26\/06\/2012","suplemento":0,"numero":1,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial de Corumb\u00e1","capa":1,"paginas":0}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '230'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:28:27 GMT
+      Keep-Alive:
+      - timeout=5, max=100
+      Server:
+      - Apache/2.4.52 (Ubuntu)
+      Set-Cookie:
+      - CAKEPHP=sgjircehg4dhek2vb05ghdv9hr; expires=Tue, 18-Nov-2025 03:28:27 GMT;
+        Max-Age=21600; path=/; secure; HttpOnly
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - do.corumba.ms.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://do.corumba.ms.gov.br/apifront/portal/edicoes/edicoes_from_data/2012-06-29.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2012-06-29","numero":null,"ano":"","itens":[{"id":10,"data":"29\/06\/2012","suplemento":1,"numero":4,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial de Corumb\u00e1","capa":1,"paginas":0},{"id":8,"data":"29\/06\/2012","suplemento":0,"numero":4,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial de Corumb\u00e1","capa":1,"paginas":0}]}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '385'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:28:27 GMT
+      Keep-Alive:
+      - timeout=5, max=99
+      Server:
+      - Apache/2.4.52 (Ubuntu)
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - doweb.rio.rj.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://doweb.rio.rj.gov.br/apifront/portal/edicoes/edicoes_from_data/2012-05-31.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2012-05-31","numero":null,"ano":"","itens":[{"id":"1777","data":"31\/05\/2012","suplemento":0,"numero":"52","tipo_edicao_id":"1","tipo_edicao_nome":"Diario
+        Oficial da Prefeitura do Rio de Janeiro","capa":"1","paginas":"136"}]}'
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - '*'
+      Age:
+      - '25'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '257'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:30:14 GMT
+      Keep-Alive:
+      - timeout=5, max=100
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - doweb.rio.rj.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://doweb.rio.rj.gov.br/apifront/portal/edicoes/edicoes_from_data/2012-06-01.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2012-06-01","numero":null,"ano":"","itens":[{"id":"1779","data":"01\/06\/2012","suplemento":0,"numero":"53","tipo_edicao_id":"1","tipo_edicao_nome":"Diario
+        Oficial da Prefeitura do Rio de Janeiro","capa":"1","paginas":"96"}]}'
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - '*'
+      Age:
+      - '17'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '256'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:30:14 GMT
+      Keep-Alive:
+      - timeout=5, max=100
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - doweb.rio.rj.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://doweb.rio.rj.gov.br/apifront/portal/edicoes/edicoes_from_data/2012-06-04.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2012-06-04","numero":null,"ano":"","itens":[{"id":"1780","data":"04\/06\/2012","suplemento":0,"numero":"54","tipo_edicao_id":"1","tipo_edicao_nome":"Diario
+        Oficial da Prefeitura do Rio de Janeiro","capa":"1","paginas":"72"}]}'
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - '*'
+      Age:
+      - '13'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '256'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:30:14 GMT
+      Keep-Alive:
+      - timeout=5, max=100
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - doweb.rio.rj.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://doweb.rio.rj.gov.br/apifront/portal/edicoes/edicoes_from_data/2012-05-29.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2012-05-29","numero":null,"ano":"","itens":[{"id":"1772","data":"29\/05\/2012","suplemento":0,"numero":"50","tipo_edicao_id":"1","tipo_edicao_nome":"Diario
+        Oficial da Prefeitura do Rio de Janeiro","capa":"1","paginas":"64"}]}'
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - '*'
+      Age:
+      - '26'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '256'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:30:15 GMT
+      Keep-Alive:
+      - timeout=5, max=100
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - doweb.rio.rj.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://doweb.rio.rj.gov.br/apifront/portal/edicoes/edicoes_from_data/2012-05-30.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2012-05-30","numero":null,"ano":"","itens":[{"id":"1776","data":"30\/05\/2012","suplemento":1,"numero":"51","tipo_edicao_id":"1","tipo_edicao_nome":"Diario
+        Oficial da Prefeitura do Rio de Janeiro","capa":"1","paginas":"272"},{"id":"1775","data":"30\/05\/2012","suplemento":0,"numero":"51","tipo_edicao_id":"1","tipo_edicao_nome":"Diario
+        Oficial da Prefeitura do Rio de Janeiro","capa":"1","paginas":"68"}]}'
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Origin:
+      - '*'
+      Age:
+      - '27'
+      Connection:
+      - Keep-Alive
+      Content-Length:
+      - '437'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:30:16 GMT
+      Keep-Alive:
+      - timeout=5, max=100
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - doe.jaru.ro.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://doe.jaru.ro.gov.br/apifront/portal/edicoes/edicoes_from_data/2022-01-04.json
+  response:
+    body:
+      string: '{"erro":true,"msg":"Edi\u00e7\u00e3o n\u00e3o existente!","data":"2022-01-04","itens":[]}'
+    headers:
+      CF-RAY:
+      - 9a025410d82809d1-SJK
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:30:17 GMT
+      Expect-Ct:
+      - max-age=86400, enforce
+      Referrer-Policy:
+      - same-origin
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - CAKEPHP=licdrsg7sd65gm4heuiprnur2f; HttpOnly; Secure; Path=/; Max-Age=21600;
+        Expires=Tue, 18 Nov 2025 03:30:17 GMT
+      - __cf_bm=e3c6kktGMIzTBihQMokyJCKW5MWyhQ4s5117oUjdGbw-1763415017.0954237-1.0.1.1-0R_Sd090O.Z1tPPOu6WoEsP4.Xm_SgdTLNkEnLiHNI0STtOKXwkYmGIdGHkLKa7HyGxw3kMsVEgWGc2bAWLNoG_x3baSgkMxpsIVo17AN28kS6_lBA32x6K1TXyAnWR9;
+        HttpOnly; Secure; Path=/; Domain=jaru.ro.gov.br; Expires=Mon, 17 Nov 2025
+        22:00:17 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '89'
+      x-served-by:
+      - doe.jaru.ro.gov.br
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - doe.jaru.ro.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://doe.jaru.ro.gov.br/apifront/portal/edicoes/edicoes_from_data/2022-01-03.json
+  response:
+    body:
+      string: '{"erro":true,"msg":"Edi\u00e7\u00e3o n\u00e3o existente!","data":"2022-01-03","itens":[]}'
+    headers:
+      CF-RAY:
+      - 9a025410ddf209d9-SJK
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:30:17 GMT
+      Expect-Ct:
+      - max-age=86400, enforce
+      Referrer-Policy:
+      - same-origin
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - CAKEPHP=bnt68a1fnh3h2pcctkkfcrhh5e; HttpOnly; Secure; Path=/; Max-Age=21600;
+        Expires=Tue, 18 Nov 2025 03:30:17 GMT
+      - __cf_bm=O4TntrmtyzH9NU3qL2a31M5zRcnL7p8IACIO1tP0DzY-1763415017.097031-1.0.1.1-vk.DWLZWEZvEnhMFqBUjFIXK3jJvgMQqewRmHGTop8KbbD.HwVv11mpuMWY3ZePh.O2BHmashsi6W5o1hcwKrlLwwFRTjMV6l1tln6grwH0tDEBIHwlgnMoOfMeUhRUv;
+        HttpOnly; Secure; Path=/; Domain=jaru.ro.gov.br; Expires=Mon, 17 Nov 2025
+        22:00:17 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '89'
+      x-served-by:
+      - doe.jaru.ro.gov.br
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, br, zstd
+      accept-language:
+      - pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+      connection:
+      - keep-alive
+      host:
+      - doe.jaru.ro.gov.br
+      priority:
+      - u=0
+      referer:
+      - https://diariodomunicipio.sjc.sp.gov.br/
+      sec-fetch-dest:
+      - empty
+      sec-fetch-mode:
+      - cors
+      sec-fetch-site:
+      - same-origin
+      sec-gpc:
+      - '1'
+      user-agent:
+      - Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0
+      x-requested-with:
+      - XMLHttpRequest
+    method: GET
+    uri: https://doe.jaru.ro.gov.br/apifront/portal/edicoes/edicoes_from_data/2022-01-05.json
+  response:
+    body:
+      string: '{"erro":false,"msg":"","data":"2022-01-05","numero":null,"ano":"","itens":[{"id":14,"data":"05\/01\/2022","suplemento":0,"numero":2,"tipo_edicao_id":1,"tipo_edicao_nome":"Di\u00e1rio
+        Oficial","capa":1,"paginas":56}]}'
+    headers:
+      CF-RAY:
+      - 9a025410d82b09d1-SJK
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 17 Nov 2025 21:30:17 GMT
+      Expect-Ct:
+      - max-age=86400, enforce
+      Referrer-Policy:
+      - same-origin
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - CAKEPHP=0qj95tfaq46anr66h8pv6duoi9; HttpOnly; Secure; Path=/; Max-Age=21600;
+        Expires=Tue, 18 Nov 2025 03:30:17 GMT
+      - __cf_bm=NIvFJexignhSpbbHFbzjr0hEuu7No75pupr0WLN1a6Y-1763415017.0959625-1.0.1.1-4pEwCx56GbDGm.fhRc0L_aSfHCDJeguGY2IKcK9xplCM_fx9ouN69wbz7u3aKF5zVZBx8SfNoc5i7jr9qM8SOdOkBH2Cmc0zqwyCR_wbu9U4d27ezJcBYjXzB7WY8h7s;
+        HttpOnly; Secure; Path=/; Domain=jaru.ro.gov.br; Expires=Mon, 17 Nov 2025
+        22:00:17 GMT
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      content-length:
+      - '216'
+      x-served-by:
+      - doe.jaru.ro.gov.br
+    status:
+      code: 200
+      message: OK
 version: 1

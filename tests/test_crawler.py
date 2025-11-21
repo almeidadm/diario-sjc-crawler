@@ -26,46 +26,44 @@ async def test_init_default(test_config, mock_storage):
 
 
 @pytest.mark.asyncio
-async def test_create_metadata_urls(test_config):
+async def test_create_metadata_urls(test_config, mock_storage):
     """Garante que as URLs de metadados são geradas corretamente."""
-    crawler = GazetteCrawler(config=test_config)
+    crawler = GazetteCrawler(config=test_config, storage=mock_storage)
     urls = crawler.create_metadata_urls()
 
     assert urls, "Nenhuma URL gerada"
     assert all(url.endswith(".json") for url in urls)
-    assert all(test_config.METADATA_BASE_URL in url for url in urls)
+    assert all(test_config.METADATA_URL in url for url in urls)
 
 
 @pytest.mark.asyncio
 @pytest.mark.parametrize(
     "vcr_cassette", ["test_fetch_metadata_batch.yaml"], indirect=True
 )
-async def test_fetch_metadata_batch(vcr_cassette, test_config):
+async def test_fetch_metadata_batch(vcr_cassette, test_config, mock_storage):
     """
     Testa a fase de download e parse dos metadados (Fase 1).
     Utiliza o cassette gravado para evitar chamadas reais.
     """
-    crawler = GazetteCrawler(config=test_config)
+    crawler = GazetteCrawler(config=test_config, storage=mock_storage)
     urls = crawler.create_metadata_urls()
 
-    metadata_list, id_map = await crawler.fetch_metadata_batch(urls)
+    metadata_list = await crawler.fetch_metadata_batch(urls)
 
     assert isinstance(metadata_list, list)
-    assert isinstance(id_map, dict)
     assert all(m.edition_id for m in metadata_list)
-    assert all(".pdf" in v or v.startswith("http") for v in id_map.values())
 
 
 @pytest.mark.asyncio
 @pytest.mark.parametrize(
     "vcr_cassette", ["test_fetch_structure_batch.yaml"], indirect=True
 )
-async def test_fetch_structure_batch(vcr_cassette, test_config):
+async def test_fetch_structure_batch(vcr_cassette, test_config, mock_storage):
     """Testa a fase 2: busca das estruturas HTML."""
-    crawler = GazetteCrawler(config=test_config)
+    crawler = GazetteCrawler(config=test_config, storage=mock_storage)
     urls = crawler.create_metadata_urls()
 
-    metadata_list, _ = await crawler.fetch_metadata_batch(urls)
+    metadata_list = await crawler.fetch_metadata_batch(urls)
     html_results = await crawler.fetch_structure_batch(metadata_list)
 
     assert isinstance(html_results, list)
@@ -73,12 +71,12 @@ async def test_fetch_structure_batch(vcr_cassette, test_config):
     assert all("edition_id" in r for r in html_results)
 
 
-def test_parse_articles_from_html(monkeypatch):
+def test_parse_articles_from_html(test_config, mock_storage):
     """
     Testa a fase 2.1: parse de HTMLs de estrutura.
     Mocka o HtmlStructureParser para garantir integração.
     """
-    crawler = GazetteCrawler()
+    crawler = GazetteCrawler(config=test_config, storage=mock_storage)
 
     fake_articles = [
         ArticleMetadata(
@@ -114,9 +112,9 @@ def test_parse_articles_from_html(monkeypatch):
 
 
 @pytest.mark.asyncio
-async def test_fetch_content_batch(monkeypatch):
+async def test_fetch_content_batch(test_config, mock_storage):
     """Testa a fase 3: fetch dos conteúdos das matérias."""
-    crawler = GazetteCrawler()
+    crawler = GazetteCrawler(config=test_config, storage=mock_storage)
 
     articles = [
         ArticleMetadata(
@@ -145,9 +143,9 @@ async def test_fetch_content_batch(monkeypatch):
 
 
 @pytest.mark.asyncio
-async def test_process_batch(monkeypatch):
+async def test_process_batch(test_config, mock_storage):
     """Testa o pipeline completo de processamento de um lote."""
-    crawler = GazetteCrawler()
+    crawler = GazetteCrawler(config=test_config, storage=mock_storage)
 
     # Mocka as três fases
     crawler.fetch_metadata_batch = AsyncMock(
@@ -183,9 +181,9 @@ async def test_process_batch(monkeypatch):
 
 
 @pytest.mark.asyncio
-async def test_run_batched(monkeypatch):
+async def test_run_batched(test_config, mock_storage):
     """Testa a execução em lotes (run_batched)."""
-    crawler = GazetteCrawler()
+    crawler = GazetteCrawler(test_config, mock_storage)
     fake_edition = MagicMock(spec=GazetteEdition)
 
     crawler.create_metadata_urls = MagicMock(return_value=["url1", "url2", "url3"])
@@ -201,9 +199,9 @@ async def test_run_batched(monkeypatch):
 
 
 @pytest.mark.asyncio
-async def test_run(monkeypatch):
+async def test_run(test_config, mock_storage):
     """Testa a execução completa (run), incluindo armazenamento."""
-    crawler = GazetteCrawler()
+    crawler = GazetteCrawler(test_config, storage=mock_storage)
     fake_edition = MagicMock(spec=GazetteEdition, articles=[MagicMock(), MagicMock()])
 
     async def fake_batches():

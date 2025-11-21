@@ -17,17 +17,17 @@ pytestmark = pytest.mark.order(2)
     ],
     indirect=True,
 )
-async def test_structure_parser_basic(vcr_cassette, test_config):
+async def test_structure_parser_basic(vcr_cassette, test_config, mock_storage):
     """
     Testa o parse de estrutura HTML usando cassetes gravados.
     Verifica se os seletores principais ainda funcionam.
     """
-    crawler = GazetteCrawler(config=test_config)
+    crawler = GazetteCrawler(config=test_config, storage=mock_storage)
     parser = HtmlStructureParser()
 
     # === Fase 1: Busca dos metadados (usa cassette test_fetch_structure_batch.yaml) ===
     urls = crawler.create_metadata_urls()
-    metadata_list, _ = await crawler.fetch_metadata_batch(urls)
+    metadata_list = await crawler.fetch_metadata_batch(urls)
     assert metadata_list, "Nenhum metadado retornado — verifique o cassette"
 
     # === Fase 2: Busca das estruturas HTML ===
@@ -60,17 +60,17 @@ async def test_structure_parser_basic(vcr_cassette, test_config):
     ],
     indirect=True,
 )
-async def test_structure_parser_edge_cases(vcr_cassette, test_config):
+async def test_structure_parser_edge_cases(vcr_cassette, test_config, mock_storage):
     """
     Testa o parser em variações estruturais do HTML:
     - Árvore aninhada
     - Estrutura ausente
     """
-    crawler = GazetteCrawler(config=test_config)
+    crawler = GazetteCrawler(config=test_config, storage=mock_storage)
     parser = HtmlStructureParser()
 
     urls = crawler.create_metadata_urls()
-    metadata_list, _ = await crawler.fetch_metadata_batch(urls)
+    metadata_list = await crawler.fetch_metadata_batch(urls)
     html_results = await crawler.fetch_structure_batch(metadata_list)
     assert html_results, "Nenhum HTML carregado do cassette"
 
@@ -148,16 +148,16 @@ def test_deduplication_logic():
     ],
     indirect=True,
 )
-async def test_structure_parser_regression(vcr_cassette, test_config):
+async def test_structure_parser_regression(vcr_cassette, test_config, mock_storage):
     """
     Teste de regressão: garante que o número total de artigos e a estrutura geral
     continuam estáveis entre execuções.
     """
-    crawler = GazetteCrawler(config=test_config)
+    crawler = GazetteCrawler(config=test_config, storage=mock_storage)
     parser = HtmlStructureParser()
 
     urls = crawler.create_metadata_urls()
-    metadata_list, _ = await crawler.fetch_metadata_batch(urls)
+    metadata_list = await crawler.fetch_metadata_batch(urls)
     html_results = await crawler.fetch_structure_batch(metadata_list)
     assert html_results, "Nenhum HTML disponível — verifique o cassette"
 

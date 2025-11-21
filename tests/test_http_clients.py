@@ -6,8 +6,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 import httpx
 import pytest
 
-from diario_crawler.http.client import HttpClient
-from diario_crawler.http.concurrent import ConcurrentHttpClient
+from diario_crawler.core.clients import ConcurrentHttpClient, HttpClient
 
 pytestmark = pytest.mark.order(1)
 
