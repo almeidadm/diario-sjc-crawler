@@ -6,6 +6,9 @@ authors = ["almeidadm <almeidadm@outlook.com>"]
 readme = "README.md"
 packages = [{include = "diario_crawler", from = "src"}]
 
+[tool.poetry.build]
+generate-setup-file = true
+
 [tool.poetry.dependencies]
 python = ">=3.12,<3.14"
 httpx = {extras = ["http2"], version = ">=0.28.1,<0.29.0"}
