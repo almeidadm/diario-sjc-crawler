@@ -69,7 +69,6 @@ docs/_build/
 
 # Arquivos de ambiente e credenciais
 .env
-.env.*
 *.secrets
 *.key
 *.pem
