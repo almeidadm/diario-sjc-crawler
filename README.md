@@ -39,7 +39,7 @@ cli  # mapeado para diario_crawler.cli.run_crawler:main
 
 ```bash
 git clone https://github.com/almeidadm/diario-sjc-crawler
-cd rag-diario-sjc-crawler
+cd diario-sjc-crawler
 poetry install
 ```
 
